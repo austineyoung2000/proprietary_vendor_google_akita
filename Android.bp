@@ -3237,72 +3237,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_soft_ddpdec",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_ddpdec.so",
-            ],
-            shared_libs: [
-                "libdeccfg",
-                "libstagefright_foundation",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcodec2_soft_common",
-                "libcodec2_store_dolby",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_store_dolby",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_store_dolby.so",
-            ],
-            shared_libs: [
-                "libdmabufheap",
-                "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcustomgnss",
     owner: "google",
     strip: {
@@ -3315,33 +3249,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbase",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdapparamstorage",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdapparamstorage.so",
-            ],
-            shared_libs: [
-                "libcutils",
                 "libutils",
                 "liblog",
                 "libc++",
@@ -3396,34 +3303,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libm",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdeccfg",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdeccfg.so",
-            ],
-            shared_libs: [
-                "libdapparamstorage",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -5854,15 +5733,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.dolby.media.c2@1.0-service.xml",
-    owner: "google",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.google.aam.xml",
     owner: "google",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.google.aam.xml",
@@ -6880,53 +6750,6 @@ cc_prebuilt_binary {
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.dolby.media.c2@1.0-service",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
-            ],
-            shared_libs: [
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libhidlbase",
-                "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
-                "libutils",
-                "android.hardware.media.c2-V1-ndk",
-                "libbinder_ndk",
-                "libcodec2_aidl",
-                "libavservices_minijail",
-                "libbinder",
-                "libcodec2_soft_ddpdec",
-                "libcodec2_store_dolby",
                 "libc++",
                 "libc",
                 "libm",

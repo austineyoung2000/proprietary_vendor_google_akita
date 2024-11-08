@@ -663,7 +663,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/akita/proprietary/vendor/etc/init/securedpud.slider.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/securedpud.slider.rc \
     vendor/google/akita/proprietary/vendor/etc/init/trusty_metricsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusty_metricsd.rc \
     vendor/google/akita/proprietary/vendor/etc/init/twoshay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/twoshay.rc \
-    vendor/google/akita/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/google/akita/proprietary/vendor/etc/init/vendor.google.aam.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.aam.rc \
     vendor/google/akita/proprietary/vendor/etc/init/vendor.google.audiometricext@1.0-service-vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.audiometricext@1.0-service-vendor.rc \
     vendor/google/akita/proprietary/vendor/etc/init/vendor.google.battery_mitigation-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.battery_mitigation-default.rc \
@@ -680,7 +679,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/akita/proprietary/vendor/etc/libg3a_standalone_gaf_rc:$(TARGET_COPY_OUT_VENDOR)/etc/libg3a_standalone_gaf_rc \
     vendor/google/akita/proprietary/vendor/etc/libg3a_standalone_ghawb_rc:$(TARGET_COPY_OUT_VENDOR)/etc/libg3a_standalone_ghawb_rc \
     vendor/google/akita/proprietary/vendor/etc/media_codecs_aosp_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_aosp_c2.xml \
-    vendor/google/akita/proprietary/vendor/etc/media_codecs_dolby_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_c2.xml \
     vendor/google/akita/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/google/akita/proprietary/vendor/etc/modem_stat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem_stat.conf \
     vendor/google/akita/proprietary/vendor/etc/open_carrier_info.dat:$(TARGET_COPY_OUT_VENDOR)/etc/open_carrier_info.dat \
@@ -1991,13 +1989,9 @@ PRODUCT_PACKAGES += \
     libbw_av1dec \
     libbw_av1enc \
     libc2filterplugin \
-    libcodec2_soft_ddpdec \
-    libcodec2_store_dolby \
     libcustomgnss \
-    libdapparamstorage \
     libdarwinn_dba_hal_runtime \
     libdarwinn_hal \
-    libdeccfg \
     libdeeptouch \
     libdisplaycolor \
     libedgetpu_client.google \
@@ -2098,7 +2092,6 @@ PRODUCT_PACKAGES += \
     manifest_radioext.xml \
     manifest_wifi_ext_aidl.xml \
     pixel-gnss-default.xml \
-    vendor.dolby.media.c2@1.0-service.xml \
     vendor.google.aam.xml \
     vendor.google.battery_mitigation-default.xml \
     vendor.google.edgetpu_vendor_service@1.0-service.xml \
@@ -2134,7 +2127,6 @@ PRODUCT_PACKAGES += \
     init_citadel \
     rild_exynos \
     samsung.hardware.media.c2@1.2-service \
-    vendor.dolby.media.c2@1.0-service \
     vendor.google.aam-service \
     vendor.google.audiometricext@1.0-service-vendor \
     vendor.google.edgetpu_vendor_service@1.0-service \
